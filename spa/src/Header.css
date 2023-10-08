@@ -1,0 +1,36 @@
+.header{
+background-color: var(--bg-banner-color);
+ 
+ display: grid;
+ grid-template-areas: 
+
+ "header__logo"
+ "header__nav";
+    
+}
+.header__logo{
+  grid-area: header__logo;
+
+  display: block;
+  
+  margin: 0 auto;
+  width: 300px;
+}
+
+.header__nav{
+  grid-area: header__nav;
+
+  background-color: #333333;
+  color: aliceblue;
+}
+.skip-link {
+  
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+ 
+}
+

@@ -1,0 +1,22 @@
+*,*::before,*::after{
+  box-sizing: border-box;
+}
+
+:root{
+  --bg-color:#e1f4f3;
+  --bg-banner-color:#ffffff;
+  --bg-footer-color:#706c61;
+}
+
+html, body{
+  margin:0;
+  height: 100%;
+  
+  background-color: var(--bg-color);
+
+  font-family: sans-serif;
+}
+
+#root{
+  height: 100%;
+}

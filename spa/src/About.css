@@ -1,0 +1,45 @@
+.panel {
+  display: grid;
+  grid-template-areas:
+    "paneltitle panelpic"
+    "paneltext panelpic"
+
+  ;
+  grid-template-rows: auto 1fr;
+  grid-template-columns: 1fr auto;
+
+  padding: 0.5rem;
+  border: 1px solid black;
+  margin: 1rem;
+
+  background-color: white;
+}
+
+.panel__title {
+  grid-area: paneltitle;
+}
+
+
+.panel__img {
+  grid-area: panelpic;
+
+  aspect-ratio: 1/1;
+  width: 200px;
+  height: 200px;
+
+}
+
+.panel__text {
+  grid-area: paneltext;
+}
+
+@media(min-width: 44rem) {
+  .panel {
+    
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+  
+  }
+
+  
+}

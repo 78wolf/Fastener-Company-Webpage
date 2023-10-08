@@ -1,0 +1,62 @@
+.form{
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-areas: 
+  "form__success"
+  "form__main";
+
+  justify-content: center;
+  justify-items: center;
+}
+.form__success{
+  grid-area: form__success;
+  background-color: yellowgreen;
+  padding: 5px;
+  margin: 8px;
+  
+  width: 180px;
+  height: 40px;
+  font-size: 0.8rem;
+}
+
+.form__main{
+  grid-area: form__main;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  width: 30rem;
+  height: 30rem;
+  
+  padding: 8px;
+  margin:8px;
+  border: 1px solid black;
+
+  background-color: white;
+  
+}
+
+.form__title{
+  color: blueviolet;
+}
+
+.form__error{
+  color: red;
+  font-size: 0.8rem;
+}
+
+.form__button{
+  margin: 8px;
+  padding: 8px;
+
+  border: none;
+  border-radius: 10px;
+
+  background-color: blueviolet;
+  color: white;
+
+  height: 30px;
+  width: 120px;
+}
